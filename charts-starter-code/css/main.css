@@ -71,7 +71,7 @@ body {
 .chart__item:link,
 .chart__item:visited {
   transition: 
-  background-color 500ms linear;
+  all 500ms linear;
 }
 
 .chart__link,
@@ -91,9 +91,7 @@ body {
   text-align: center;
 }
 
-.chart__label:hover,
-.chart__label:focus,
-.chart__label:active {
+.chart__item:hover .chart__label {
   color: #000;
 }
 

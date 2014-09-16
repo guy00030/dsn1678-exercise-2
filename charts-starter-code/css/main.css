@@ -125,9 +125,9 @@ body {
     background-color 500ms linear;
 }
 
-.chart__bar:hover, 
-.chart__bar:focus,
-.chart__bar:active {
+.chart__item:hover .chart__bar, 
+.chart__item:focus .chart__bar,
+.chart__item:active .chart__bar {
   background-color: #00f1b5;
 }
 
@@ -146,6 +146,14 @@ body {
   opacity: 0;
 
   text-align: center;
+  transition: all 350ms linear;
+}
+
+.chart__item:hover .chart__count, 
+.chart__item:focus .chart__count,
+.chart__item:active .chart__count {
+  top: -4em;
+  opacity: 1;
 }
 
 .chart__count::after {
